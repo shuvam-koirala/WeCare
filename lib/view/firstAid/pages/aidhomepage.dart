@@ -1,5 +1,5 @@
 import 'package:WeCare/view/firstAid/pages/aidbody.dart';
-import 'package:WeCare/view/preparedness/Screens/Newsfeed.dart';
+import 'package:WeCare/view/preparedness/Screens/Bar.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -91,7 +91,7 @@ class Homepage extends StatelessWidget {
             icon: Icon(Icons.arrow_back),
             onPressed: () {
               Navigator.pushReplacement(
-                  context, MaterialPageRoute(builder: (context) => NewsFeed()));
+                  context, MaterialPageRoute(builder: (context) => Bar()));
             }),
       ),
       body: StreamBuilder(
