@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:ui';
+import 'package:WeCare/view/preparedness/Screens/Bar.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:fl_chart/fl_chart.dart';
@@ -318,26 +319,28 @@ class _CovidState extends State<Covid> {
                       height: 170,
                       width: 120,
                       child: Card(
-                        child: Column(
-                          children: [
-                            SizedBox(
-                              height: 30,
-                            ),
-                            Text("Tested Positive",
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 22)),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            Center(
-                                child: Text("15,273",
-                                    style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 22))),
-                          ],
+                        child: Center(
+                          child: Column(
+                            children: [
+                              SizedBox(
+                                height: 30,
+                              ),
+                              Text("Tested Positive",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 22)),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Center(
+                                  child: Text("15,273",
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 22))),
+                            ],
+                          ),
                         ),
                         color: Colors.teal,
                         elevation: 10,
@@ -346,6 +349,14 @@ class _CovidState extends State<Covid> {
                   ),
                 ],
               ),
+              FlatButton.icon(
+                  onPressed: () {
+                    Navigator.pushReplacement(context,
+                        MaterialPageRoute(builder: (context) => Bar()));
+                  },
+                  color: Colors.amber,
+                  icon: Icon(Icons.arrow_back),
+                  label: Text("Return"))
             ],
           ),
         ]),

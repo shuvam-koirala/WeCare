@@ -1,6 +1,4 @@
 import 'package:WeCare/view/preparedness/Screens/Bar.dart';
-import 'package:WeCare/view/preparedness/Screens/Bar.dart';
-import 'package:WeCare/view/preparedness/Screens/Bar.dart';
 import 'package:WeCare/view/preparedness/Screens/List1.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
