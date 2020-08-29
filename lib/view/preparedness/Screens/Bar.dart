@@ -30,7 +30,7 @@ class _BarState extends State<Bar> {
                 accountEmail: Text("applier1234@gmail.com"),
                 currentAccountPicture: CircleAvatar(
                   backgroundImage: NetworkImage(
-                      "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"),
+                      "https://icons-for-free.com/iconfiles/png/512/facebook+profile+user+profile+icon-1320184041317225686.png"),
                 ),
                 decoration: BoxDecoration(
                   color: Colors.deepPurple,
