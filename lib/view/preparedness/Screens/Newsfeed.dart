@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:url_launcher/url_launcher.dart';
-
 import 'Bar.dart';
 
 class NewsFeed extends StatefulWidget {
@@ -123,7 +122,7 @@ class _NewsFeedState extends State<NewsFeed> {
             flexibleSpace: Column(
               children: [
                 Text(
-                  "Preparedness &",
+                  "Disaster prepare &",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 20,
@@ -166,7 +165,7 @@ class _NewsFeedState extends State<NewsFeed> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         SlidingContainer(
-                            title: "Good Day, Ram",
+                            title: "Welcome",
                             initialOffsetx: -1,
                             intervalStart: 0,
                             intervalEnd: 0.5,
